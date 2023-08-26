@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
-  "name": "汉典Test",
-  "description": "Base Level Extension",
+  "name": "汉典",
+  "description": "汉典 chrome 插件，在网页中选中文本后点击插件图标即可查询。",
   "version": "1.0",
   "action": {
     "default_popup": "popup/popup.html",
