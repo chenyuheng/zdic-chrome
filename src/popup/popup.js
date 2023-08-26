@@ -28,7 +28,7 @@ document.addEventListener("DOMContentLoaded", async function () {
 
     let url = "http://www.zdic.net/hans/" + result;
     if (result.isEnglish()) {
-        url = "https://cn.bing.com/dict/search?q=" + result;
+        url = "https://cn.bing.com/dict/search?mkt=zh-cn&q=" + result;
     }
     if (result.length === 0) {
         url = "http://www.zdic.net/";
