@@ -13,4 +13,6 @@ chrome 应用商店地址：https://chrome.google.com/webstore/detail/abmbllaili
 ![汉典查询说明](img/screenshot_3.png "汉典查询说明")
 
 ## 感谢
-旧版汉典插件：https://github.com/bitzip/zdic
+* 汉典官网：https://www.zdic.net/
+* 必应词典官网：https://cn.bing.com/dict/
+* 旧版汉典插件：https://github.com/bitzip/zdic
