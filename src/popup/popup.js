@@ -26,18 +26,16 @@ document.addEventListener("DOMContentLoaded", async function () {
     }
     result = result.trim();
 
-    let url = "http://www.zdic.net/hans/" + result;
+    let url = "https://www.zdic.net/hans/" + encodeURIComponent(result);
     if (result.isEnglish()) {
-        url = "https://cn.bing.com/dict/search?mkt=zh-cn&q=" + result;
+        url = "https://cn.bing.com/dict/search?mkt=zh-cn&q=" + encodeURIComponent(result);
     }
     if (result.length === 0) {
-        url = "http://www.zdic.net/";
+        url = "https://www.zdic.net/";
     }
 
-    setTimeout(function () {
-        dictionaryFrame.src = url;
-        dictionaryFrame.addEventListener("load", function () {
-            indicator.textContent = "";
-        });
-    }, 10);
+    dictionaryFrame.addEventListener("load", function () {
+        indicator.textContent = "";
+    });
+    dictionaryFrame.src = url;
 });
